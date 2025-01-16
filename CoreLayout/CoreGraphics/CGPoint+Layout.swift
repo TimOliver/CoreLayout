@@ -71,23 +71,28 @@ public extension CGPoint {
 // MARK: - Private State -
 
 internal extension CGPoint {
-
     /// Lazily loads and returns whether the current UI
     /// environment is flipped for specific languages or not
     static var isRightToLeftLayoutDirection: Bool {
-        if let isRTL = _isRightToLeftLayoutDirection {
+        if let isRTL = CoreLayoutDirection.isRightToLeftLayoutDirectionEnabled {
             return isRTL
         }
         let isRTL = (UIApplication.shared.userInterfaceLayoutDirection == .rightToLeft)
-        _isRightToLeftLayoutDirection = isRTL
+        CoreLayoutDirection.isRightToLeftLayoutDirectionEnabled = isRTL
         return isRTL
     }
 
     /// For unit testing purposes, override the singleton value
     /// and inject an explicit value
-    static func _setIsRightToLeftLayoutDirection(_ isRTL: Bool?) {
-        _isRightToLeftLayoutDirection = isRTL
+    static func setIsRightToLeftLayoutDirection(_ isRTL: Bool?) {
+        CoreLayoutDirection.isRightToLeftLayoutDirectionEnabled = isRTL
+    }
+
+    // Static struct for caching whether the device is currently rendering
+    // content from right-to-left or not
+    fileprivate struct CoreLayoutDirection {
+        static var isRightToLeftLayoutDirectionEnabled: Bool?
     }
 }
 
-var _isRightToLeftLayoutDirection: Bool?
+// swiftlint:enable identifier_name

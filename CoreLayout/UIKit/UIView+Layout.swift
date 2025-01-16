@@ -24,11 +24,10 @@ import UIKit
 
 // swiftlint:disable identifier_name
 
-/// A collection of convenience properties and methods
-/// to help simplify and streamline configuring, sizing and laying out views
-
 // MARK: - Basic Geometry -
 
+/// A collection of convenience properties and methods
+/// to help simplify and streamline configuring, sizing and laying out views
 public extension UIView {
 
     /// The X position of this view in points
@@ -236,3 +235,5 @@ public extension UIView {
         cornerRadius = view.cornerRadius - distance
     }
 }
+
+// swiftlint:enable identifier_name

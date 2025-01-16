@@ -7,6 +7,8 @@
 
 import UIKit
 
+// swiftlint:disable cyclomatic_complexity
+
 class ViewController: UITableViewController {
 
     let headerView = UIView()
@@ -49,7 +51,6 @@ class ViewController: UITableViewController {
         updateRedViewPosition()
     }
 
-    // swiftlint:disable cyclomatic_complexity
     private func updateRedViewPosition(animated: Bool = false) {
 
         let position = (selectedHorizontal, selectedVertical)
@@ -175,3 +176,5 @@ extension ViewController {
         updateRedViewPosition(animated: true)
     }
 }
+
+// swiftlint:enable cyclomatic_complexity

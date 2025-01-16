@@ -9,5 +9,5 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Run CGLayoutKit's Tests
-      run: xcodebuild -project CGLayoutKitExample.xcodeproj -scheme CGLayoutKitExample -destination 'platform=iOS Simulator,name=iPhone 15' test
+    - name: Run Core Layout's Tests
+      run: xcodebuild -project CoreLayoutExample.xcodeproj -scheme CoreLayoutExample -destination 'platform=iOS Simulator,name=iPhone 16' test

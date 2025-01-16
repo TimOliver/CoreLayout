@@ -46,7 +46,7 @@ class CGPointTests: XCTestCase {
     func testLeadingOffset() {
 
         // Forcefully set our environment to the default left-to-right
-        CGPoint._setIsRightToLeftLayoutDirection(false)
+        CGPoint.setIsRightToLeftLayoutDirection(false)
 
         // Define a dummy point
         let point = CGPoint(x: 50.0, y: 50.0)
@@ -60,7 +60,7 @@ class CGPointTests: XCTestCase {
                        CGPoint(x: 40, y: 40))
 
         // Force the environment to flip directions
-        CGPoint._setIsRightToLeftLayoutDirection(true)
+        CGPoint.setIsRightToLeftLayoutDirection(true)
 
         // Positive offsetting
         XCTAssertEqual(point.leadingOffsetBy(dx: 10, dy: 10),
@@ -74,7 +74,7 @@ class CGPointTests: XCTestCase {
     func testLeadingOffsetBy() {
 
         // Forcefully set our environment to the default left-to-right
-        CGPoint._setIsRightToLeftLayoutDirection(false)
+        CGPoint.setIsRightToLeftLayoutDirection(false)
 
         // Define a dummy point
         let point = CGPoint(x: 50.0, y: 50.0)
@@ -88,7 +88,7 @@ class CGPointTests: XCTestCase {
                        CGPoint(x: 40, y: 40))
 
         // Force the environment to flip directions
-        CGPoint._setIsRightToLeftLayoutDirection(true)
+        CGPoint.setIsRightToLeftLayoutDirection(true)
 
         // Positive offsetting
         XCTAssertEqual(point.leadingOffsetBy(10),

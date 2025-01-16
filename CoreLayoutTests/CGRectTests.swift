@@ -29,7 +29,7 @@ class CGRectTests: XCTestCase {
 
     func testSemanticCorners() throws {
         // Forcefully set our environment to the default left-to-right
-        CGPoint._setIsRightToLeftLayoutDirection(false)
+        CGPoint.setIsRightToLeftLayoutDirection(false)
 
         // Define the rectangle
         let rect = CGRect(x: 10, y: 10, width: 100, height: 100)
@@ -47,7 +47,7 @@ class CGRectTests: XCTestCase {
         XCTAssertEqual(rect.bottomCenter, CGPoint(x: 60, y: 110))
 
         // Forcefully set our environment to be flipped
-        CGPoint._setIsRightToLeftLayoutDirection(true)
+        CGPoint.setIsRightToLeftLayoutDirection(true)
 
         // Outer corners
         XCTAssertEqual(rect.topLeading, CGPoint(x: 110, y: 10))

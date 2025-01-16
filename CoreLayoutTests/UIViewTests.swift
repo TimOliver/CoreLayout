@@ -42,7 +42,7 @@ class UIViewTests: XCTestCase {
 
     func testSemanticViewCorners() throws {
         // Forcefully set our environment to the default left-to-right
-        CGPoint._setIsRightToLeftLayoutDirection(false)
+        CGPoint.setIsRightToLeftLayoutDirection(false)
 
         let view = UIView(frame: CGRect(x: 10, y: 10, width: 100, height: 100))
 
@@ -59,7 +59,7 @@ class UIViewTests: XCTestCase {
         XCTAssertEqual(view.bottomCenter, CGPoint(x: 60, y: 110))
 
         // Forcefully set our environment to be flipped
-        CGPoint._setIsRightToLeftLayoutDirection(true)
+        CGPoint.setIsRightToLeftLayoutDirection(true)
 
         // Outer corners
         XCTAssertEqual(view.topLeading, CGPoint(x: 110, y: 10))
@@ -87,7 +87,7 @@ class UIViewTests: XCTestCase {
 
     func testSemanticOffsetting() {
         // Forcefully set our environment to the default left-to-right
-        CGPoint._setIsRightToLeftLayoutDirection(false)
+        CGPoint.setIsRightToLeftLayoutDirection(false)
 
         let view = UIView(frame: CGRect(x: 10, y: 10, width: 100, height: 100))
 
@@ -99,7 +99,7 @@ class UIViewTests: XCTestCase {
         XCTAssertEqual(view.origin, CGPoint(x: 15, y: 15))
 
         // Forcefully set our environment to be flipped
-        CGPoint._setIsRightToLeftLayoutDirection(true)
+        CGPoint.setIsRightToLeftLayoutDirection(true)
 
         // Reset the position
         view.origin = CGPoint(x: 10, y: 10)

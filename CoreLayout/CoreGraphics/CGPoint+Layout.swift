@@ -78,7 +78,7 @@ internal extension CGPoint {
         if let isRTL = _isRightToLeftLayoutDirection {
             return isRTL
         }
-        let isRTL =  (UIApplication.shared.userInterfaceLayoutDirection == .rightToLeft)
+        let isRTL = (UIApplication.shared.userInterfaceLayoutDirection == .rightToLeft)
         _isRightToLeftLayoutDirection = isRTL
         return isRTL
     }

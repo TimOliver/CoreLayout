@@ -37,13 +37,13 @@
 
 /* Begin PBXFileReference section */
 		221846932830B92A00FA6857 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		221846992830C88E00FA6857 /* CGLayoutKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CGLayoutKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		221846992830C88E00FA6857 /* CoreLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		221846A22830C8A900FA6857 /* CGPointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPointTests.swift; sourceTree = "<group>"; };
 		221846A42830CC8500FA6857 /* CGSizeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGSizeTests.swift; sourceTree = "<group>"; };
 		221846A62830CE2800FA6857 /* CGRectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRectTests.swift; sourceTree = "<group>"; };
 		221846A92830E44400FA6857 /* UIViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewTests.swift; sourceTree = "<group>"; };
-		22D5CBC52CA45557007320EE /* CGLayoutKit.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = CGLayoutKit.podspec; sourceTree = "<group>"; };
-		22F5E527282F4FC100EEA8B5 /* CGLayoutKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CGLayoutKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22D5CBC52CA45557007320EE /* CoreLayout.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = CoreLayout.podspec; sourceTree = "<group>"; };
+		22F5E527282F4FC100EEA8B5 /* CoreLayoutExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreLayoutExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F5E52A282F4FC100EEA8B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22F5E52C282F4FC100EEA8B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		22F5E52E282F4FC100EEA8B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,7 +76,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2218469A2830C88E00FA6857 /* CGLayoutKitTests */ = {
+		2218469A2830C88E00FA6857 /* CoreLayoutTests */ = {
 			isa = PBXGroup;
 			children = (
 				221846A22830C8A900FA6857 /* CGPointTests.swift */,
@@ -84,17 +84,17 @@
 				221846A62830CE2800FA6857 /* CGRectTests.swift */,
 				221846A92830E44400FA6857 /* UIViewTests.swift */,
 			);
-			path = CGLayoutKitTests;
+			path = CoreLayoutTests;
 			sourceTree = "<group>";
 		};
 		22F5E51E282F4FC100EEA8B5 = {
 			isa = PBXGroup;
 			children = (
-				22F5E53E282F573500EEA8B5 /* CGLayoutKit */,
-				22F5E529282F4FC100EEA8B5 /* CGLayoutKitExample */,
-				2218469A2830C88E00FA6857 /* CGLayoutKitTests */,
+				22F5E53E282F573500EEA8B5 /* CoreLayout */,
+				22F5E529282F4FC100EEA8B5 /* CoreLayoutExample */,
+				2218469A2830C88E00FA6857 /* CoreLayoutTests */,
 				221846932830B92A00FA6857 /* README.md */,
-				22D5CBC52CA45557007320EE /* CGLayoutKit.podspec */,
+				22D5CBC52CA45557007320EE /* CoreLayout.podspec */,
 				22F5E528282F4FC100EEA8B5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,13 +102,13 @@
 		22F5E528282F4FC100EEA8B5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				22F5E527282F4FC100EEA8B5 /* CGLayoutKitExample.app */,
-				221846992830C88E00FA6857 /* CGLayoutKitTests.xctest */,
+				22F5E527282F4FC100EEA8B5 /* CoreLayoutExample.app */,
+				221846992830C88E00FA6857 /* CoreLayoutTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		22F5E529282F4FC100EEA8B5 /* CGLayoutKitExample */ = {
+		22F5E529282F4FC100EEA8B5 /* CoreLayoutExample */ = {
 			isa = PBXGroup;
 			children = (
 				22F5E52A282F4FC100EEA8B5 /* AppDelegate.swift */,
@@ -119,16 +119,16 @@
 				22F5E535282F4FC100EEA8B5 /* LaunchScreen.storyboard */,
 				22F5E538282F4FC100EEA8B5 /* Info.plist */,
 			);
-			path = CGLayoutKitExample;
+			path = CoreLayoutExample;
 			sourceTree = "<group>";
 		};
-		22F5E53E282F573500EEA8B5 /* CGLayoutKit */ = {
+		22F5E53E282F573500EEA8B5 /* CoreLayout */ = {
 			isa = PBXGroup;
 			children = (
 				22F5E547282F7ED800EEA8B5 /* CoreGraphics */,
 				22F5E548282F7EE200EEA8B5 /* UIKit */,
 			);
-			path = CGLayoutKit;
+			path = CoreLayout;
 			sourceTree = "<group>";
 		};
 		22F5E547282F7ED800EEA8B5 /* CoreGraphics */ = {
@@ -153,9 +153,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		221846982830C88E00FA6857 /* CGLayoutKitTests */ = {
+		221846982830C88E00FA6857 /* CoreLayoutTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2218469F2830C88E00FA6857 /* Build configuration list for PBXNativeTarget "CGLayoutKitTests" */;
+			buildConfigurationList = 2218469F2830C88E00FA6857 /* Build configuration list for PBXNativeTarget "CoreLayoutTests" */;
 			buildPhases = (
 				221846952830C88E00FA6857 /* Sources */,
 				221846962830C88E00FA6857 /* Frameworks */,
@@ -166,14 +166,14 @@
 			dependencies = (
 				2218469E2830C88E00FA6857 /* PBXTargetDependency */,
 			);
-			name = CGLayoutKitTests;
+			name = CoreLayoutTests;
 			productName = SpackleTests;
-			productReference = 221846992830C88E00FA6857 /* CGLayoutKitTests.xctest */;
+			productReference = 221846992830C88E00FA6857 /* CoreLayoutTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		22F5E526282F4FC100EEA8B5 /* CGLayoutKitExample */ = {
+		22F5E526282F4FC100EEA8B5 /* CoreLayoutExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 22F5E53B282F4FC100EEA8B5 /* Build configuration list for PBXNativeTarget "CGLayoutKitExample" */;
+			buildConfigurationList = 22F5E53B282F4FC100EEA8B5 /* Build configuration list for PBXNativeTarget "CoreLayoutExample" */;
 			buildPhases = (
 				221846A82830E02D00FA6857 /* Run SwiftLint */,
 				22F5E523282F4FC100EEA8B5 /* Sources */,
@@ -184,9 +184,9 @@
 			);
 			dependencies = (
 			);
-			name = CGLayoutKitExample;
+			name = CoreLayoutExample;
 			productName = CGFramingExample;
-			productReference = 22F5E527282F4FC100EEA8B5 /* CGLayoutKitExample.app */;
+			productReference = 22F5E527282F4FC100EEA8B5 /* CoreLayoutExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -208,7 +208,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 22F5E522282F4FC100EEA8B5 /* Build configuration list for PBXProject "CGLayoutKitExample" */;
+			buildConfigurationList = 22F5E522282F4FC100EEA8B5 /* Build configuration list for PBXProject "CoreLayoutExample" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -221,8 +221,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				22F5E526282F4FC100EEA8B5 /* CGLayoutKitExample */,
-				221846982830C88E00FA6857 /* CGLayoutKitTests */,
+				22F5E526282F4FC100EEA8B5 /* CoreLayoutExample */,
+				221846982830C88E00FA6857 /* CoreLayoutTests */,
 			);
 		};
 /* End PBXProject section */
@@ -302,7 +302,7 @@
 /* Begin PBXTargetDependency section */
 		2218469E2830C88E00FA6857 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 22F5E526282F4FC100EEA8B5 /* CGLayoutKitExample */;
+			target = 22F5E526282F4FC100EEA8B5 /* CoreLayoutExample */;
 			targetProxy = 2218469D2830C88E00FA6857 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -341,7 +341,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CGLayoutKitExample.app/CGLayoutKitExample";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreLayoutExample.app/CoreLayoutExample";
 			};
 			name = Debug;
 		};
@@ -359,7 +359,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CGLayoutKitExample.app/CGLayoutKitExample";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreLayoutExample.app/CoreLayoutExample";
 			};
 			name = Release;
 		};
@@ -489,7 +489,7 @@
 				DEVELOPMENT_TEAM = 6LF3GMKZAB;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CGLayoutKitExample/Info.plist;
+				INFOPLIST_FILE = CoreLayoutExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -501,7 +501,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.tim.CGLayoutKit;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.tim.CoreLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -519,7 +519,7 @@
 				DEVELOPMENT_TEAM = 6LF3GMKZAB;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CGLayoutKitExample/Info.plist;
+				INFOPLIST_FILE = CoreLayoutExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -531,7 +531,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.tim.CGLayoutKit;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.tim.CoreLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -542,7 +542,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2218469F2830C88E00FA6857 /* Build configuration list for PBXNativeTarget "CGLayoutKitTests" */ = {
+		2218469F2830C88E00FA6857 /* Build configuration list for PBXNativeTarget "CoreLayoutTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				221846A02830C88E00FA6857 /* Debug */,
@@ -551,7 +551,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		22F5E522282F4FC100EEA8B5 /* Build configuration list for PBXProject "CGLayoutKitExample" */ = {
+		22F5E522282F4FC100EEA8B5 /* Build configuration list for PBXProject "CoreLayoutExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				22F5E539282F4FC100EEA8B5 /* Debug */,
@@ -560,7 +560,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		22F5E53B282F4FC100EEA8B5 /* Build configuration list for PBXNativeTarget "CGLayoutKitExample" */ = {
+		22F5E53B282F4FC100EEA8B5 /* Build configuration list for PBXNativeTarget "CoreLayoutExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				22F5E53C282F4FC100EEA8B5 /* Debug */,

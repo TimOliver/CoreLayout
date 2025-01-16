@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "22F5E526282F4FC100EEA8B5"
-               BuildableName = "CGLayoutKitExample.app"
-               BlueprintName = "CGLayoutKitExample"
-               ReferencedContainer = "container:CGLayoutKitExample.xcodeproj">
+               BuildableName = "CoreLayoutExample.app"
+               BlueprintName = "CoreLayoutExample"
+               ReferencedContainer = "container:CoreLayoutExample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "221846982830C88E00FA6857"
-               BuildableName = "CGLayoutKitTests.xctest"
-               BlueprintName = "CGLayoutKitTests"
-               ReferencedContainer = "container:CGLayoutKitExample.xcodeproj">
+               BuildableName = "CoreLayoutTests.xctest"
+               BlueprintName = "CoreLayoutTests"
+               ReferencedContainer = "container:CoreLayoutExample.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "22F5E526282F4FC100EEA8B5"
-            BuildableName = "CGLayoutKitExample.app"
-            BlueprintName = "CGLayoutKitExample"
-            ReferencedContainer = "container:CGLayoutKitExample.xcodeproj">
+            BuildableName = "CoreLayoutExample.app"
+            BlueprintName = "CoreLayoutExample"
+            ReferencedContainer = "container:CoreLayoutExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "22F5E526282F4FC100EEA8B5"
-            BuildableName = "CGLayoutKitExample.app"
-            BlueprintName = "CGLayoutKitExample"
-            ReferencedContainer = "container:CGLayoutKitExample.xcodeproj">
+            BuildableName = "CoreLayoutExample.app"
+            BlueprintName = "CoreLayoutExample"
+            ReferencedContainer = "container:CoreLayoutExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import CGLayoutKitExample
+@testable import CoreLayoutExample
 
 class CGRectTests: XCTestCase {
 

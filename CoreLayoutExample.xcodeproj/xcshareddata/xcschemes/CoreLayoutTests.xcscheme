@@ -17,9 +17,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "221846982830C88E00FA6857"
-               BuildableName = "CGLayoutKitTests.xctest"
-               BlueprintName = "CGLayoutKitTests"
-               ReferencedContainer = "container:CGLayoutKitExample.xcodeproj">
+               BuildableName = "CoreLayoutTests.xctest"
+               BlueprintName = "CoreLayoutTests"
+               ReferencedContainer = "container:CoreLayoutExample.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
